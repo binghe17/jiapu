@@ -27,7 +27,7 @@ $('#checkBtn').click(function(){
                 window.document.head.appendChild(s);
                 s.onload = function() { 
                     console.log('ok')
-                    $('.geDiagramContainer').css({"touch-action": "all"})
+                    $('.geDiagramContainer').removeAttr('style')//.css({"touch-action": "all"})
                 }
             })();
             $('#passwordBox').remove();
